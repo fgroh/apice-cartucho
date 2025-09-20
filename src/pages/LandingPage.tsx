@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Home, CheckCircle, DollarSign, MessageCircle } from "lucide-react";
 
 const whatsappLink = "https://wa.me/5547997255699?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20%C3%81pice%20Cartucho.%20Quero%20saber%20sobre%3A%20%5Brecarga%20HP%20%7C%20remanufatura%20%7C%20cartucho%20original%20%7C%20toner%5D.%20Modelo%20da%20impressora%3A%20_____.%20Bairro%20em%20Brusque%3A%20_____.%20Obrigado(a)!";
-const logoUrl = "https://scontent.fxap2-1.fna.fbcdn.net/v/t39.30808-6/301020534_612723200285507_4922673615364789919_n.png";
+const logoUrl = "/apice-cartucho-logo.png"; // Caminho atualizado para a nova logo
 
 const LandingPage = () => {
   return (
