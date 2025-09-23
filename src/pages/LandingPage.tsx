@@ -22,8 +22,8 @@ const LandingPage = () => {
           <span className="text-2xl font-bold text-black">Ápice Cartucho</span>
         </div>
 
-        {/* Right side: WhatsApp Button */}
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+        {/* Right side: WhatsApp Button (Hidden on mobile, visible on md and up) */}
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="hidden md:block">
           <Button className="bg-[#25D366] hover:bg-[#1DA851] text-white rounded-full px-6 py-3 font-bold shadow-lg">
             Falar no WhatsApp
           </Button>
