@@ -5,17 +5,15 @@ import { Button } from "@/components/ui/button";
 import { Home, CheckCircle, DollarSign, MessageCircle } from "lucide-react";
 
 const whatsappLink = "https://wa.me/5547997255699?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20%C3%81pice%20Cartucho.%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.%20Pode%20me%20ajudar%3F";
-const logoUrl = "/apice-cartucho-logo.png";
+const logoUrl = "/apice-cartucho-logo.png"; // Mantido caso precise ser usado em outro lugar, mas não no header.
 
 const LandingPage = () => {
   return (
     <div className="font-sans antialiased text-gray-800">
       {/* Header Fixo */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md p-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <img src={logoUrl} alt="Ápice Cartucho Logo" className="h-10 mr-3" />
-        </div>
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md p-4 flex items-center justify-center relative">
+        <h2 className="text-2xl font-bold text-black">Ápice Cartucho</h2>
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="absolute right-4">
           <Button className="bg-[#25D366] hover:bg-[#1DA851] text-white rounded-full px-6 py-3 font-bold shadow-lg">
             Falar no WhatsApp
           </Button>
