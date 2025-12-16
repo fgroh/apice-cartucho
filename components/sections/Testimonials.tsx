@@ -34,7 +34,7 @@ export const Testimonials: React.FC = () => {
                     </p>
                     <div className="flex items-center justify-center gap-3">
                         <div className="text-center">
-                            <div className="font-bold text-base uppercase tracking-wide text-black">Ricardo Mendes</div>
+                            <div className="font-bold text-base uppercase tracking-wide text-black">Ricardo M.</div>
                             <div className="text-sm text-gray-400 font-medium">Empresário em Brusque</div>
                         </div>
                     </div>
