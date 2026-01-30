@@ -11,26 +11,35 @@ export const CTA: React.FC = () => {
 
     return (
         <>
-            <section className="py-24 px-6 text-center relative overflow-hidden bg-stone-900 text-white">
-                {/* Pattern overlay */}
-                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+            <section className="py-24 px-6 relative overflow-hidden bg-brand-yellow border-y-4 border-black">
+                {/* Warning Tape Effect */}
+                <div className="absolute top-0 left-0 w-full h-4 bg-black"></div>
+                <div className="absolute bottom-0 left-0 w-full h-4 bg-black"></div>
 
-                <div className="relative z-10 max-w-4xl mx-auto">
-                    <h2 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-tight">
-                        Não fique na mão.
+                <div className="absolute inset-0 z-0 opacity-10" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #000 0, #000 10px, transparent 10px, transparent 20px)' }}></div>
+
+                <div className="relative z-10 max-w-5xl mx-auto text-center">
+                    <div className="inline-block bg-black text-white px-4 py-2 font-mono font-bold text-xl mb-6 transform -rotate-2">
+                        ⚠ URGÊNCIA?
+                    </div>
+
+                    <h2 className="font-display text-4xl md:text-7xl mb-8 uppercase tracking-tighter text-black leading-none">
+                        NÃO FIQUE IMPRIMINDO EM <span className="underline decoration-4 underline-offset-4 decoration-black/20">BRANCO</span>.
                     </h2>
-                    <p className="text-xl text-gray-400 mb-12 font-medium max-w-2xl mx-auto">
-                        Fale conosco agora e tenha sua impressora funcionando perfeitamente ainda hoje.
+
+                    <p className="font-mono text-xl md:text-2xl text-black/80 mb-12 font-bold max-w-2xl mx-auto">
+                        RECUPERAMOS SUA IMPRESSORA AINDA HOJE.
                     </p>
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+                    <div className="flex flex-col sm:flex-row justify-center gap-6">
                         <Button
                             variant="primary"
                             size="lg"
                             onClick={() => handleWhatsApp(WHATSAPP_MESSAGES.URGENT)}
-                            className="px-10 py-5 text-lg shadow-green-500/20"
+                            className="bg-black text-white hover:bg-white hover:text-black border-2 border-black shadow-[8px_8px_0px_0px_#fff]"
                         >
-                            <MessageCircle size={24} fill="currentColor" />
-                            Chamar no WhatsApp
+                            <MessageCircle size={24} className="mr-2" />
+                            CHAMAR TÉCNICO AGORA
                         </Button>
                     </div>
                 </div>

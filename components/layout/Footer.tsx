@@ -5,21 +5,21 @@ import { PHONE_DISPLAY } from '../../constants';
 
 export const Footer: React.FC = () => {
     return (
-        <footer className="py-12 px-6 border-t border-gray-100 text-sm text-gray-500 bg-white">
+        <footer className="py-12 px-6 border-t-4 border-black text-sm bg-white">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                 <BrandLogo />
 
-                <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 font-medium">
-                    <div className="flex items-center gap-2 hover:text-brand-green transition-colors">
-                        <MapPin size={16} /> Brusque - SC
+                <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 font-mono font-bold text-black">
+                    <div className="flex items-center gap-2 hover:bg-brand-yellow transition-colors px-2 py-1">
+                        <MapPin size={16} /> BRUSQUE - SC
                     </div>
-                    <div className="flex items-center gap-2 hover:text-brand-green transition-colors">
+                    <div className="flex items-center gap-2 hover:bg-brand-cyan transition-colors px-2 py-1">
                         <MessageCircle size={16} /> {PHONE_DISPLAY}
                     </div>
                 </div>
 
-                <div className="text-xs font-bold tracking-widest uppercase text-gray-300">
-                    &copy; {new Date().getFullYear()} Ápice Cartucho
+                <div className="font-mono text-xs font-bold tracking-widest uppercase text-black/40">
+                    &copy; {new Date().getFullYear()} ÁPICE.CARTUCHO // v2.0
                 </div>
             </div>
         </footer>

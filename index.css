@@ -1,12 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-green: #25D366;
-  --color-brand-darkGreen: #128C7E;
-
-  --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --color-brand-cyan: #00FFFF;
+  --color-brand-magenta: #FF00FF;
+  --color-brand-yellow: #FFFF00;
+  --color-brand-black: #000000;
+  
+  --font-display: 'Anton', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
   --font-mono: 'Space Mono', monospace;
+
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
 }
 
 @layer base {

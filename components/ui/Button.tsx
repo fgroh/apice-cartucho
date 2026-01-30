@@ -19,19 +19,19 @@ export const Button: React.FC<ButtonProps> = ({
     className,
     ...props
 }) => {
-    const baseStyles = "font-bold rounded-full transition-all duration-300 flex items-center justify-center gap-2 active:scale-95";
+    const baseStyles = "font-display font-medium text-lg uppercase tracking-wider border-2 border-black transition-all duration-200 flex items-center justify-center gap-2 active:translate-x-[2px] active:translate-y-[2px] active:shadow-none";
 
     const variants = {
-        primary: "bg-brand-green text-white hover:bg-brand-darkGreen shadow-lg hover:shadow-green-500/30",
-        secondary: "bg-black text-white hover:bg-gray-800 shadow-lg hover:shadow-gray-500/30",
-        outline: "bg-transparent text-black border-2 border-black hover:bg-black hover:text-white",
-        ghost: "bg-transparent text-gray-600 hover:text-brand-green hover:bg-green-50"
+        primary: "bg-brand-cyan text-black shadow-[4px_4px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#000000]",
+        secondary: "bg-brand-magenta text-white shadow-[4px_4px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#000000]",
+        outline: "bg-transparent text-black shadow-[4px_4px_0px_0px_#000000] hover:bg-black hover:text-white hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#000000]",
+        ghost: "bg-transparent text-black border-transparent hover:bg-gray-100 italic lowercase tracking-tight"
     };
 
     const sizes = {
-        sm: "px-4 py-2 text-sm",
-        md: "px-6 py-3 text-base",
-        lg: "px-8 py-4 text-lg"
+        sm: "h-10 px-4 text-sm",
+        md: "h-12 px-6 text-base",
+        lg: "h-16 px-8 text-xl"
     };
 
     return (

@@ -19,21 +19,21 @@ export const Header: React.FC = () => {
     };
 
     return (
-        <nav className={`fixed w-full z-40 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm' : 'bg-transparent'} py-4`}>
+        <nav className={`fixed w-full z-40 transition-all duration-300 ${scrolled ? 'bg-white border-b-2 border-black py-3' : 'bg-white/80 border-b border-gray-200 py-5'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
 
                 <BrandLogo />
 
                 <div className="hidden md:flex items-center gap-8">
-                    <a href="#beneficios" className="text-sm font-medium hover:text-brand-green transition-colors uppercase tracking-wide">Benefícios</a>
-                    <a href="#servicos" className="text-sm font-medium hover:text-brand-green transition-colors uppercase tracking-wide">Serviços</a>
+                    <a href="#beneficios" className="font-mono text-sm font-bold uppercase hover:bg-black hover:text-white px-2 py-1 transition-colors">Benefícios</a>
+                    <a href="#servicos" className="font-mono text-sm font-bold uppercase hover:bg-black hover:text-white px-2 py-1 transition-colors">Serviços</a>
                     <button
                         onClick={() => handleWhatsApp(WHATSAPP_MESSAGES.QUOTE)}
-                        className="text-sm font-bold border-b-2 border-transparent hover:border-black transition-all pb-0.5"
+                        className="font-mono text-sm font-bold uppercase decoration-2 underline decoration-brand-cyan hover:bg-brand-cyan hover:text-black transition-all px-2 py-1"
                     >
                         Fazer Orçamento
                     </button>
-                    <Button onClick={() => handleWhatsApp(WHATSAPP_MESSAGES.MAIN)}>
+                    <Button onClick={() => handleWhatsApp(WHATSAPP_MESSAGES.MAIN)} size="sm">
                         <MessageCircle size={18} fill="currentColor" />
                         WhatsApp
                     </Button>

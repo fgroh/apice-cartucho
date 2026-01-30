@@ -3,39 +3,39 @@ import { Star } from 'lucide-react';
 
 export const Testimonials: React.FC = () => {
     return (
-        <section className="py-24 px-6 bg-white">
+        <section className="py-24 px-6 bg-white border-b-4 border-black">
             <div className="container mx-auto max-w-4xl text-center">
-                <h2 className="text-2xl md:text-4xl font-black mb-16 uppercase tracking-tight">
-                    Excelência em cada impressão
+                <h2 className="font-display text-4xl md:text-6xl uppercase tracking-tighter mb-20 text-black">
+                    REPORT DE QUALIDADE
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20 divide-y-4 md:divide-y-0 md:divide-x-4 divide-black">
                     <div className="flex flex-col items-center pt-8 md:pt-0">
-                        <span className="text-5xl font-black mb-2 text-black tracking-tighter">+1000</span>
-                        <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Impressoras Atendidas</span>
+                        <span className="font-display text-6xl text-brand-cyan tracking-tighter leading-none">+1000</span>
+                        <span className="font-mono text-xs font-bold bg-black text-white px-2 py-1 uppercase mt-2">Impressoras Ativas</span>
                     </div>
                     <div className="flex flex-col items-center pt-8 md:pt-0">
-                        <span className="text-5xl font-black mb-2 text-black tracking-tighter">2h</span>
-                        <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Tempo Médio</span>
+                        <span className="font-display text-6xl text-brand-magenta tracking-tighter leading-none">&lt; 2h</span>
+                        <span className="font-mono text-xs font-bold bg-black text-white px-2 py-1 uppercase mt-2">Tempo Resposta</span>
                     </div>
                     <div className="flex flex-col items-center pt-8 md:pt-0">
-                        <span className="text-5xl font-black mb-2 text-black tracking-tighter">100%</span>
-                        <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Garantia</span>
+                        <span className="font-display text-6xl text-brand-yellow tracking-tighter leading-none">100%</span>
+                        <span className="font-mono text-xs font-bold bg-black text-white px-2 py-1 uppercase mt-2">Garantia</span>
                     </div>
                 </div>
 
-                <div className="bg-gray-50 p-12 rounded-3xl relative mx-auto max-w-3xl">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg">
-                        <Star className="text-yellow-400 fill-yellow-400 w-8 h-8" />
+                <div className="bg-white border-4 border-black p-12 relative mx-auto max-w-3xl shadow-[12px_12px_0px_0px_#000]">
+                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-1 font-mono text-sm font-bold uppercase rotate-2">
+                        Feedback Cliente
                     </div>
 
-                    <p className="text-xl md:text-2xl font-medium text-gray-800 mb-8 pt-4 relative z-10 leading-relaxed font-serif italic">
-                        "Serviço impecável! Me salvaram num dia que eu tinha um relatório enorme para entregar. O técnico chegou rápido, fez a recarga ali mesmo."
+                    <p className="font-display text-2xl md:text-4xl text-black uppercase leading-tight mb-8">
+                        "Serviço impecável! O técnico chegou rápido e fez a recarga ali mesmo. SALVOU O DIA."
                     </p>
                     <div className="flex items-center justify-center gap-3">
                         <div className="text-center">
-                            <div className="font-bold text-base uppercase tracking-wide text-black">Ricardo M.</div>
-                            <div className="text-sm text-gray-400 font-medium">Empresário em Brusque</div>
+                            <div className="font-mono font-bold text-base uppercase bg-brand-cyan inline-block px-2">Ricardo M.</div>
+                            <div className="font-mono text-xs text-black/60 font-bold mt-1">EMPRESÁRIO // BRUSQUE_SC</div>
                         </div>
                     </div>
                 </div>
