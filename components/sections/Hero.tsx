@@ -10,16 +10,16 @@ export const Hero: React.FC = () => {
     };
 
     return (
-        <section className="relative min-h-[92vh] flex items-center bg-white overflow-hidden border-b-4 border-black">
+        <section className="relative min-h-[92vh] flex items-center bg-white overflow-hidden border-b-4 border-black pt-28 lg:pt-0">
             {/* Grid Pattern Background */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#e5e5e5_1px,transparent_1px),linear-gradient(to_bottom,#e5e5e5_1px,transparent_1px)] bg-[size:40px_40px] opacity-40 -z-10"></div>
 
             {/* Registration Marks (Crosshairs) - CMYK Style */}
-            <div className="absolute top-8 left-8 w-12 h-12 border-l-2 border-t-2 border-black flex items-start justify-start">
+            <div className="absolute top-28 lg:top-8 left-8 w-12 h-12 border-l-2 border-t-2 border-black flex items-start justify-start">
                 <div className="w-4 h-[2px] bg-brand-cyan absolute top-2 left-0"></div>
                 <div className="h-4 w-[2px] bg-brand-magenta absolute left-2 top-0"></div>
             </div>
-            <div className="absolute top-8 right-8 w-12 h-12 border-r-2 border-t-2 border-black">
+            <div className="absolute top-28 lg:top-8 right-8 w-12 h-12 border-r-2 border-t-2 border-black">
                 <span className="absolute top-1 right-2 font-mono text-xs font-bold">R-001</span>
             </div>
             <div className="absolute bottom-8 left-8 w-12 h-12 border-l-2 border-b-2 border-black">
