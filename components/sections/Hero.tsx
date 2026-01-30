@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
     };
 
     return (
-        <section className="relative min-h-[92vh] flex items-center bg-white overflow-hidden border-b-4 border-black pt-28 lg:pt-0">
+        <section className="relative min-h-[92vh] flex items-center bg-white overflow-hidden border-b-4 border-black pt-28 pb-28 lg:pt-0 lg:pb-0">
             {/* Grid Pattern Background */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#e5e5e5_1px,transparent_1px),linear-gradient(to_bottom,#e5e5e5_1px,transparent_1px)] bg-[size:40px_40px] opacity-40 -z-10"></div>
 
